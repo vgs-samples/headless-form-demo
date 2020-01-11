@@ -1,6 +1,6 @@
 <p align="center"><a href="https://www.verygoodsecurity.com/"><img src="https://avatars0.githubusercontent.com/u/17788525" width="128" alt="VGS Logo"></a></p>
 <p align="center"><b>Browser bot with VGS proxy</b></p>
-<p align="center"><i>Sample of using Puppteer with VGS alias to auto fill web forms</i></p>
+<p align="center"><i>Sample of using Puppeteer with VGS alias to auto fill web forms</i></p>
 
 # Instructions for using this App
 This demo app demonstrates a use case using users' redacted credentials or credit card information to autofill web forms.
@@ -39,12 +39,28 @@ This demo app demonstrates a use case using users' redacted credentials or credi
     await page.type('input.js-password-field', 'tok_sandbox_8PGi9Kaq4kCYe5Hy9chvU2');
 ```
 4. Turn on logger in VGS dashboard
-5. Run `node chrome-bot-twitter.js`
+5. Run `node puppeteer-twitter.js`
 
 ## VGS reveal route setup 
 1. Go to logger and filter requests by method `post` to find the request for login
+
+<img src="https://github.com/vgs-samples/headless-form-demo/blob/master/images/find-login-request.png?raw=true">
+
 2. Use `Secure this payload` in logger and establish filters for sensitive fields in payload
+
+<img src="https://github.com/vgs-samples/headless-form-demo/blob/master/images/select-fields.png?raw=true">
+
+<img src="https://github.com/vgs-samples/headless-form-demo/blob/master/images/setup-routes.png?raw=true">
+
 3. Run the app again and find the corresponding login request in logger, you will find the VGS aliases have been revealed to the original credentials
- 
+
+<img src="https://github.com/vgs-samples/headless-form-demo/blob/master/images/token-revealed.png?raw=true">
+
+## Demo
+![twitter-form-bot](https://github.com/vgs-samples/headless-form-demo/blob/master/images/twitter-login-reveal.gif?raw=true)
+
+
+
+
 
 
