@@ -5,12 +5,12 @@
 # Instructions for using this App
 This demo app demonstrates a use case using users' redacted credentials or credit card information to autofill web forms.
 
-## Sample Website
-https://browserbot-demoform.herokuapp.com/
+![demo-form-bot](https://github.com/vgs-samples/headless-form-demo/blob/master/images/sample_form_demo.gif?raw=true)
 
 ## Requirements
 - Installed [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/)
 - Account on [verygoodsecurity.com](https://www.verygoodsecurity.com/)
+- Sample website https://browserbot-demoform.herokuapp.com/
 
 ## VGS base setup
 1. Go to VGS dashboard, create a new vault in your organization
