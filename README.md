@@ -23,8 +23,6 @@ This demo app demonstrates a use case using users' redacted credentials or credi
 2. Install all dependencies `npm install`
 3. Replace the code below with your TLS cert path, vault id and proxy user credentials:
 ```js
-    const cert = fs.readFileSync('sandbox-cert.pem');
-
     page.on('request', interceptedRequest => {
             const tunnelingAgent = tunnel.httpsOverHttp({
                 ca: [ fs.readFileSync('sandbox-cert.pem')],

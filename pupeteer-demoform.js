@@ -16,8 +16,6 @@ const recaptchaPlugin = require('puppeteer-extra-plugin-recaptcha');
     const browser = await puppeteer.launch({slowMo:20, args: ['--enable-features=NetworkService', '--disable-setuid-sandbox', '--no-sandbox'], headless: false});
     let page = await browser.newPage();
 
-    const cert = fs.readFileSync('sandbox-cert.pem');
-
     await page.goto('https://browserbot-demoform.herokuapp.com/');
     await page.waitForSelector('input[name=username]'); 
     await page.type('input[name=username]', 'tok_sandbox_8rVSERS1WKtC2H3a2mJABY');
