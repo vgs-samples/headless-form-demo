@@ -74,14 +74,5 @@ This demo app demonstrates a use case using users' redacted credentials or credi
 
 <img src="https://github.com/vgs-samples/headless-form-demo/blob/master/images/token_revealed.png?raw=true">
 
-### Twitter Demo
-![twitter-form-bot](https://github.com/vgs-samples/headless-form-demo/blob/master/images/twitter-login-reveal.gif?raw=true)
-
-### Reddit Demo 
-
-![reddit-form-bot](https://github.com/vgs-samples/headless-form-demo/blob/master/images/reddit-demo.gif?raw=true)
-
-
-
 
 
